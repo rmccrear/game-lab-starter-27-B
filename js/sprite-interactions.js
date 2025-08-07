@@ -11,4 +11,12 @@ function doSpriteInteraction() {
         star2.x = 0 - randomNumber(0, 10);
         star2.y = randomNumber(10, 390);
     }
+
+    if(player.isTouching(platform1)){
+        player.collide(platform1);
+    }
+
+     if(player.isTouching(platform2)){
+        player.collide(platform2);
+    }
 }
