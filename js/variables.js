@@ -4,6 +4,10 @@
 var alienAnimation;
 var starAnimation;
 var platformAnimation;
+var mikeStand;
+var mikeWalk;
+var mikeJump;
+var mikeSpin;
 
 // sprite variables
 var player;

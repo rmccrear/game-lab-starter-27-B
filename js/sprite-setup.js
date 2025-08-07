@@ -3,9 +3,12 @@ function setupSprites() {
   // Example Code follows.
   // Please delete and replace with your own code.
   player = createSprite(200, 200, 50, 50);
-  player.addAnimation('fly', alienAnimation);
-  player.height = 50;
-  player.width = 50;
+  player.addAnimation('fly', mikeJump);
+  player.addAnimation('spin', mikeSpin);
+  player.addAnimation('walk', mikeStand)
+
+
+  player.scale = 1.5;
 
   star1 = createSprite(100, 100, 50, 50);
   star1.shapeColor = "aqua";
