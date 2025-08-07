@@ -3,12 +3,12 @@ function doSpriteInteraction() {
     // Please delete and replace with your own code.
     if (player.isTouching(star1)) {
         score += 1;
-        star1.x = 0 - randomNumber(0, 10);
+        star1.x = randomNumber(0, 10);
         star1.y = randomNumber(10, 390);
     }
     if (player.isTouching(star2)) {
         score += 1;
-        star2.x = 0 - randomNumber(0, 10);
+        star2.x = randomNumber(0, 10);
         star2.y = randomNumber(10, 390);
     }
 
@@ -21,6 +21,6 @@ function doSpriteInteraction() {
 
     if (player.isTouching(platform2)) {
         player.collide(platform2);
-        player.changeAnimation('spin', mikeSpin);
+         player.changeAnimation('spin', mikeSpin);
     }
 }
