@@ -7,12 +7,19 @@ function setupSprites() {
   player.height = 50;
   player.width = 50;
 
-  star = createSprite(100, 100, 50, 50);
-  star.shapeColor = "aqua";
-  star.addAnimation('twinkle', starAnimation);
-  star.velocityY = 2;
-  star.height = 30;
-  star.width = 30;
+  star1 = createSprite(100, 100, 50, 50);
+  star1.shapeColor = "aqua";
+  star1.addAnimation('twinkle', starAnimation);
+  star1.velocityY = 2;
+  star1.height = 30;
+  star1.width = 30;
+
+  star2 = createSprite(100, 100, 50, 50);
+  star2.shapeColor = "aqua";
+  star2.addAnimation('twinkle', starAnimation);
+  star2.velocityY = 2;
+  star2.height = 30;
+  star2.width = 30;
 
   //Eddie Added
   platform1 = createSprite(randomNumber(100, 300), -25, 50, 50);
