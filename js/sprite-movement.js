@@ -23,14 +23,8 @@ function doSpriteMovement() {
     if(player.x > 410) {
         player.x = -10;
     }
-    if(player.y > 410) {
-        player.y = -10;
-    }
     if(player.x<-10){
         player.x = 410;
     }
-    if(player.y<-10){
-        player.y = 410;
-    }  
 
 }
