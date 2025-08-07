@@ -14,13 +14,11 @@ function doSpriteInteraction() {
 
     if (player.isTouching(platform1)) {
         player.collide(platform1);
-        player.changeAnimation('spin', mikeSpin);
-    } else {
-        player.changeAnimation('fly', mikeJump);
+        player.changeAnimation('walk');
     }
 
     if (player.isTouching(platform2)) {
         player.collide(platform2);
-         player.changeAnimation('spin', mikeSpin);
     }
+
 }
