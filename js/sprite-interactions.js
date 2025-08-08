@@ -14,7 +14,6 @@ function doSpriteInteraction() {
 
     if (player.isTouching(platform1)) {
         player.collide(platform1);
-        player.changeAnimation('walk');
     }
 
     if (player.isTouching(platform2)) {

@@ -6,7 +6,7 @@ function setupSprites() {
   player.addAnimation('fly', mikeJump);
   player.addAnimation('spin', mikeSpin);
   player.addAnimation('walk', mikeStand)
-  player.addAnimation('flyL',mikeJumpL)
+  player.addAnimation('flyL', mikeJumpL)
 
 
   player.scale = 1.5;

@@ -32,7 +32,7 @@ function doSpriteMovement() {
     player.x = 410;
   }
 
-  if (player.velocityY > 0) {
+  if (player.velocityY > 1) {
     player.changeAnimation('spin');
 
   } else {
