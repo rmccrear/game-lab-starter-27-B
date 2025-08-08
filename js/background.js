@@ -1,4 +1,4 @@
-frameRate: 2
+
 function drawBackground() {
     if (score < 10) {
         background1();
