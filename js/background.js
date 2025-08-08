@@ -1,4 +1,4 @@
-
+frameRate: 2
 function drawBackground() {
     if (score < 10) {
         background1();
@@ -23,6 +23,8 @@ function background2() {
     background("purple");
     noStroke();
     fill("yellow");
-    ellipse(randomNumber(0, 400), randomNumber(0, 400), 3, 3);
-    ellipse(randomNumber(0, 400), randomNumber(0, 400), 3, 3);
+    ellipse(randomNumber(0, 400), randomNumber(0, 400), 6, 6);
+    ellipse(randomNumber(0, 400), randomNumber(0, 400), 6, 6);
+    fill("orange")
+    ellipse(340, 50, 60, 60);
 }
