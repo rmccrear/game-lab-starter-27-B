@@ -1,8 +1,5 @@
 
 function doSpriteMovement() {
-  // Example Code follows.
-  // Please delete and replace with your own code.
-
   //Eddie added
   if (platform1.y > 415) {
     platform1.x = randomNumber(100, 300);
@@ -28,9 +25,11 @@ function doSpriteMovement() {
   if (player.x > 410) {
     player.x = -10;
   }
+
   if (player.x < -10) {
     player.x = 410;
   }
+
   if(player.y > 400){
     lives -= 1;
     player.x = randomNumber(0, 400);
@@ -49,6 +48,7 @@ function doSpriteMovement() {
     }
   }
 
+  // freeze and hide sprites if lives are 0
   if(lives<=0){
     player.changeAnimation('jump');
     player.visible = false;
@@ -63,6 +63,4 @@ function doSpriteMovement() {
     platform1.visible = false;
     platform2.visible = false;
   } 
-
-
 }

@@ -1,7 +1,14 @@
 
 function respondToUser() {
+    // set the gravity for the player
     player.velocityY += gravity;
 
+    // wait for user to press space to start the game
+    if(keyWentDown("SPACE")){
+        gameState = "play";
+    }
+
+    // set the player velocity based on key presses
     if (keyDown("LEFT")) {
         if (keyDown("CTRL")) {
             player.velocityX = -6;
@@ -35,5 +42,4 @@ function respondToUser() {
         player.velocityX = 0;
         player.velocityY = 0;
     }
-
 }

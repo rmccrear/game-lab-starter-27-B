@@ -1,16 +1,14 @@
 
 function setupSprites() {
-  // Example Code follows.
-  // Please delete and replace with your own code.
+  // setup the player sprite
   player = createSprite(200, 200, 50, 50);
   player.addAnimation('fly', mikeJump);
   player.addAnimation('spin', mikeSpin);
   player.addAnimation('walk', mikeStand)
   player.addAnimation('flyL', mikeJumpL)
-
-
   player.scale = 1.5;
 
+  // setup the star sprites
   star1 = createSprite(100, 100, 50, 50);
   star1.shapeColor = "aqua";
   star1.addAnimation('twinkle', starAnimation);
@@ -25,6 +23,7 @@ function setupSprites() {
   star2.height = 30;
   star2.width = 30;
 
+  // setup the platform sprites
   //Eddie Added
   platform1 = createSprite(randomNumber(100, 300), 325, 50, 50);
   platform1.addAnimation("platform", platformAnimation);
@@ -32,7 +31,5 @@ function setupSprites() {
   //Eddie Added
   platform2 = createSprite(randomNumber(100, 300), 125, 50, 50);
   platform2.addAnimation("platform", platformAnimation);
-  platform2.velocityY = 1;
-
-  
+  platform2.velocityY = 1;  
 }

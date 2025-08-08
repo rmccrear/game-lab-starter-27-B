@@ -1,6 +1,5 @@
 function doSpriteInteraction() {
-    // Example Code follows.
-    // Please delete and replace with your own code.
+    // Check for collisions with player and stars 1 & 2
     if (player.isTouching(star1)) {
         score += 1;
         star1.x = randomNumber(0, 10);
@@ -12,12 +11,11 @@ function doSpriteInteraction() {
         star2.y = randomNumber(10, 390);
     }
 
+    // check for collisions with platforms
     if (player.isTouching(platform1)) {
         player.collide(platform1);
     }
-
     if (player.isTouching(platform2)) {
         player.collide(platform2);
     }
-
 }
