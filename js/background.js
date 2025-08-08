@@ -1,11 +1,24 @@
 
 function drawBackground() {
-    if (score < 10) {
+    if (lives <= 0) {   
+        background("black");
+        noStroke();
+        fill("red");
+        textSize(32);
+        textAlign(CENTER);
+        text("Game Over", width / 2, height / 2);
+        return;
+    } else if (lives > 0 && score < 10) {
+        background1();
+    } else if (lives > 0 && score >= 10) {
+        background2();
+    }
+    /*if (score < 10) {
         background1();
     }
     if (score >= 10) {
         background2();
-    }
+    }*/
 }
 
 function background1() {

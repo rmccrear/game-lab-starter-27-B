@@ -18,3 +18,5 @@ var score = 0;
 var platform1;
 var platform2;
 var gravity = 0.5;
+var lives = 3;
+

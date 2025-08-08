@@ -31,6 +31,12 @@ function doSpriteMovement() {
   if (player.x < -10) {
     player.x = 410;
   }
+  if(player.y > 400){
+    lives -= 1;
+    player.x = randomNumber(0, 400);
+    player.y = 0;
+    player.velocityY = 0;
+  }
 
   if (player.velocityY > 1) {
     player.changeAnimation('spin');
