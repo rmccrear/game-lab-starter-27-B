@@ -1,22 +1,22 @@
 
 function drawBackground() {
     // draw background according to game state
-        // if gameState is "splash", show splash screen
-    if(gameState === "splash") {
+    // if gameState is "splash", show splash screen
+    if (gameState === "splash") {
         gameSplashScreen();
         // if gameState is "play", show the game play
     } else if (gameState === "play") {
         gamePlay();
-        
+
         // draw background based on score and lives
-        if(lives > 0 && score < 10){
+        if (lives > 0 && score < 10) {
             background1();
         } else if (lives > 0 && score >= 10) {
             background2();
         }
 
         // set gameState to "over" if lives are 0
-        if(lives < 1){
+        if (lives < 1) {
             gameState = "over";
         }
         // if gameState is "over", show game over display
@@ -44,9 +44,10 @@ function gamePlay() {
     star2.visible = true;
     platform1.visible = true;
     platform2.visible = true;
+    playSound("sprites/back-music.mp3");
 }
 
-function gameOver(){
+function gameOver() {
     background("black");
     gameOverDisplay();      // game over text
 }
