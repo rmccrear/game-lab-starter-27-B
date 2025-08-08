@@ -49,6 +49,19 @@ function doSpriteMovement() {
     }
   }
 
+  if(lives<=0){
+    player.changeAnimation('jump');
+    player.velocityY = 0;
+    player.velocityX = 0;
+    star1.velocityX = 0;
+    star1.velocityY = 0;
+    star2.velocityX = 0;
+    star2.velocityY = 0;
+    platform1.velocityX = 0;
+    platform1.velocityY = 0;
+    platform2.velocityX = 0;
+    platform2.velocityY = 0;
+  } 
 
 
 }
