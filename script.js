@@ -19,7 +19,7 @@ function draw() {
   // draw the score board and other boards
   // in: display-boards.js
   showBoards();
-  
+
   // respond to user input 
   // in: user-controls.js
   respondToUser();
@@ -35,3 +35,4 @@ function draw() {
   // This just draws all the sprites
   drawSprites();
 }
+

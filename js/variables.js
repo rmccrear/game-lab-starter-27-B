@@ -20,3 +20,5 @@ var platform2;
 var gravity = 0.5;
 var lives = 3;
 
+
+
