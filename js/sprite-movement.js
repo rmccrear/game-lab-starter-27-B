@@ -56,6 +56,12 @@ function doSpriteMovement() {
     star2.visible = false;
     platform1.visible = false;
     platform2.visible = false;
+    player.velocityY = 0;
+    player.velocityX = 0;
+    star1.visible = false;
+    star2.visible = false;
+    platform1.visible = false;
+    platform2.visible = false;
   } 
 
 
