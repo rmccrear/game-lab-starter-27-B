@@ -1,8 +1,10 @@
 
 function drawBackground() {
     // draw background according to game state
-    if(gameState === "start"){
-        gameStart();
+        // if gameState is "splash", show splash screen
+    if(gameState === "splash") {
+        gameSplashScreen();
+        // if gameState is "play", show the game play
     } else if (gameState === "play") {
         gamePlay();
         
@@ -17,14 +19,16 @@ function drawBackground() {
         if(lives < 1){
             gameState = "over";
         }
+        // if gameState is "over", show game over display
     } else if (gameState === "over") {
         gameOver();
     }
 }
 
-function gameStart() {
+function gameSplashScreen() {
     background("black");
-    splashScreen();
+    splashScreen();     // splash screen text
+    // reset game variables
     player.velocityY = 0;
     player.visible = false;
     star1.visible = false;
@@ -34,6 +38,7 @@ function gameStart() {
 }
 
 function gamePlay() {
+    // set sprites to visible
     player.visible = true;
     star1.visible = true;
     star2.visible = true;
@@ -43,7 +48,7 @@ function gamePlay() {
 
 function gameOver(){
     background("black");
-    gameOverDisplay();
+    gameOverDisplay();      // game over text
 }
 
 function background1() {

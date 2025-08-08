@@ -1,7 +1,6 @@
 
 function setupAnimations() {
-  // Example Code follows.
-  // Please delete and replace with your own code.
+  // load sprites and animations
   mikeStand = loadSpriteSheet("sprites/mike.png", 17, 49, 3);
   mikeSpin = loadSpriteSheet("sprites/mikeSpin.png", 19, 55, 5);
   mikeJump = loadAnimation("sprites/mikeJump.png");

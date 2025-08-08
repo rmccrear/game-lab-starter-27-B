@@ -1,3 +1,4 @@
+
 // animation variables
 var alienAnimation;
 var starAnimation;
@@ -19,4 +20,4 @@ var platform2;
 var score = 0;
 var gravity = 0.5;
 var lives = 3;
-var gameState = "start";
+var gameState = "splash"; // possible values: "splash", "play", "over"

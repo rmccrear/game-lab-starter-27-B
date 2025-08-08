@@ -38,6 +38,7 @@ function respondToUser() {
             player.velocityY = 3;
         }
     }
+        // stop the player if space is pressed
     if (keyDown("SPACE")) {
         player.velocityX = 0;
         player.velocityY = 0;
