@@ -51,16 +51,11 @@ function doSpriteMovement() {
 
   if(lives<=0){
     player.changeAnimation('jump');
-    player.velocityY = 0;
-    player.velocityX = 0;
-    star1.velocityX = 0;
-    star1.velocityY = 0;
-    star2.velocityX = 0;
-    star2.velocityY = 0;
-    platform1.velocityX = 0;
-    platform1.velocityY = 0;
-    platform2.velocityX = 0;
-    platform2.velocityY = 0;
+    player.visible = false;
+    star1.visible = false;
+    star2.visible = false;
+    platform1.visible = false;
+    platform2.visible = false;
   } 
 
 
