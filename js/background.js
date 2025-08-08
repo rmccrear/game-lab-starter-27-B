@@ -1,6 +1,6 @@
 
 function drawBackground() {
-    if (lives <= 0) {   
+    if (lives <= 0) {
         background("black");
         noStroke();
         fill("red");
@@ -8,6 +8,7 @@ function drawBackground() {
         textAlign(CENTER);
         text("Game Over", width / 2, height / 2);
         text("Score " + score, width / 2, height / 1.5);
+
 
         return;
     } else if (lives > 0 && score < 10) {

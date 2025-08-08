@@ -34,5 +34,7 @@ function draw() {
 
   // This just draws all the sprites
   drawSprites();
+
+ 
 }
 

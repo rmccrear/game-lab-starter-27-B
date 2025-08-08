@@ -34,5 +34,5 @@ function setupSprites() {
   platform2.addAnimation("platform", platformAnimation);
   platform2.velocityY = 1;
 
-  playSound("sprites/back-music.mp3", true);
+  
 }
