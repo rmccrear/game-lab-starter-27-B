@@ -20,12 +20,25 @@ function doSpriteMovement() {
     star1.y = -25;
   }
 
+  if (star2.y > 415) {
+    star2.x = randomNumber(100, 300);
+    star2.y = -25;
+  }
+
   if (player.x > 410) {
     player.x = -10;
   }
   if (player.x < -10) {
     player.x = 410;
   }
+
+  if (player.velocityY > 0) {
+    player.changeAnimation('spin');
+
+  } else {
+    player.changeAnimation('fly')
+  }
+
 
 
 }
