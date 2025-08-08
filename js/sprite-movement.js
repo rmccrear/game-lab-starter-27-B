@@ -37,9 +37,9 @@ function doSpriteMovement() {
 
   } else {
     if (player.velocityX < 0) {
-      player.changeAnimation('flyL')
+      player.changeAnimation('flyL');
     } else {
-      player.changeAnimation('fly')
+      player.changeAnimation('fly');
     }
   }
 
