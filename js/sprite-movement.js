@@ -20,11 +20,12 @@ function doSpriteMovement() {
     star1.y = -25;
   }
 
-    if(player.x > 410) {
-        player.x = -10;
-    }
-    if(player.x<-10){
-        player.x = 410;
-    }
+  if (player.x > 410) {
+    player.x = -10;
+  }
+  if (player.x < -10) {
+    player.x = 410;
+  }
+
 
 }
