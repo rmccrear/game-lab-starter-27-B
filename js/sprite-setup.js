@@ -3,12 +3,9 @@ function setupSprites() {
   // Example Code follows.
   // Please delete and replace with your own code.
   player = createSprite(200, 200, 50, 50);
-  player.addAnimation('fly', mikeJump);
-  player.addAnimation('spin', mikeSpin);
-  player.addAnimation('walk', mikeStand)
-
-
-  player.scale = 1.5;
+  player.addAnimation('fly', alienAnimation);
+  player.height = 50;
+  player.width = 50;
 
   star1 = createSprite(100, 100, 50, 50);
   star1.shapeColor = "aqua";
@@ -20,7 +17,7 @@ function setupSprites() {
   star2 = createSprite(100, 100, 50, 50);
   star2.shapeColor = "aqua";
   star2.addAnimation('twinkle', starAnimation);
-  star2.velocityY = 3;
+  star2.velocityY = 2;
   star2.height = 30;
   star2.width = 30;
 

@@ -1,5 +1,7 @@
 
 function respondToUser() {
+    player.velocityY += gravity;
+
     if (keyDown("LEFT")) {
         if (keyDown("CTRL")) {
             player.velocityX = -6;
