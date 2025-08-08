@@ -7,7 +7,7 @@ function drawBackground() {
         textSize(32);
         textAlign(CENTER);
         text("Game Over", width / 2, height / 2);
-        text("Score" + score, width / 2, height / 1.5);
+        text("Score " + score, width / 2, height / 1.5);
 
         return;
     } else if (lives > 0 && score < 10) {
