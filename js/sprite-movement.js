@@ -36,7 +36,11 @@ function doSpriteMovement() {
     player.changeAnimation('spin');
 
   } else {
-    player.changeAnimation('fly')
+    if (player.velocityX < 0) {
+      player.changeAnimation('flyL')
+    } else {
+      player.changeAnimation('fly')
+    }
   }
 
 

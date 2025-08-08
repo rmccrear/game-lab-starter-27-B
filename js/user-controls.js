@@ -14,6 +14,7 @@ function respondToUser() {
             player.velocityX = 6;
         } else {
             player.velocityX = 3;
+
         }
     }
     if (keyDown("UP")) {

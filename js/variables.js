@@ -8,6 +8,7 @@ var mikeStand;
 var mikeWalk;
 var mikeJump;
 var mikeSpin;
+var mikeJumpL;
 
 // sprite variables
 var player;
