@@ -51,6 +51,8 @@ function gamePlay() {
 function gameOver() {
     background("black");
     gameOverDisplay();      // game over text
+    stopSound("sprites/back-music.mp3");
+
 }
 
 function background1() {
