@@ -9,4 +9,5 @@ function setupAnimations() {
 
   // Eddie added
   platformAnimation = loadAnimation("sprites/platform.png");
+  
 }

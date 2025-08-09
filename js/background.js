@@ -35,6 +35,7 @@ function gameSplashScreen() {
     star2.visible = false;
     platform1.visible = false;
     platform2.visible = false;
+    playSound("sprites/back-music.mp3", true);
 }
 
 function gamePlay() {
@@ -44,7 +45,7 @@ function gamePlay() {
     star2.visible = true;
     platform1.visible = true;
     platform2.visible = true;
-    playSound("sprites/back-music.mp3");
+
 }
 
 function gameOver() {
