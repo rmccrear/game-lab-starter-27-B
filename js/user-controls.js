@@ -6,7 +6,6 @@ function respondToUser() {
     // wait for user to press space to start the game
     if(keyWentDown("SPACE")){
         gameState = "play";
-        playSound("sprites/boop.mp3");
 
     }
 
