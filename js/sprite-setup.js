@@ -1,7 +1,7 @@
 
 function setupSprites() {
   // setup the player sprite
-  player = createSprite(200, 200, 50, 50);
+  player = createSprite(randomNumber(0, 400), 0, 50, 50);
   player.addAnimation('fly', mikeJump);
   player.addAnimation('spin', mikeSpin);
   player.addAnimation('walk', mikeStand)
